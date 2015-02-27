@@ -21,6 +21,5 @@ class TestFactorial(unittest.TestCase):
         self.assertRaises(ZeroDivisionError, div, 0)
 
 
-
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,6 @@
 import sys
 
+
 def fact(n):
     """
     Factorial function
@@ -12,6 +13,7 @@ def fact(n):
         return 1
     return n * fact(n -1)
 
+
 def div(n):
     """
     Just divide
@@ -23,6 +25,7 @@ def div(n):
 def main(n):
     res = fact(n)
     print res
+
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:

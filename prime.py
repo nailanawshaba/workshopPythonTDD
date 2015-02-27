@@ -1,18 +1,18 @@
 class PrimeFactorizer(object):
-    def __init__(self, number):
-        self.number = number
+    def __init__(self):
+        pass
 
-    def generate(self):
+    def generate(self, number):
         factors = []
         candidate = 2
 
-        while candidate < self.number:
-            while self.number % candidate == 0:
+        while candidate < number:
+            while number % candidate == 0:
                 factors.append(candidate)
-                self.number /= candidate
+                number /= candidate
             candidate += 1
 
-        if self.number > 1:
-            factors.append(self.number)
+        if number > 1:
+            factors.append(number)
 
         return factors
