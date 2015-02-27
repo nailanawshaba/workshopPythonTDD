@@ -6,7 +6,7 @@ def fact(n):
     Factorial function
 
     :arg n: Number
-    :returns: factorial of n
+    :returns: factorials of n
 
     """
     if n == 0:

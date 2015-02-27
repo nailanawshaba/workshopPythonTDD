@@ -1,5 +1,5 @@
 import unittest
-from prime import PrimeFactorizer
+from primefactorization.prime import PrimeFactorizer
 
 class TestPrimeFactorizer(unittest.TestCase):
     def setUp(self):

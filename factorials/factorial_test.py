@@ -1,5 +1,5 @@
 import unittest
-from factorial import fact, div
+from factorials.factorial import fact, div
 
 class TestFactorial(unittest.TestCase):
     """
