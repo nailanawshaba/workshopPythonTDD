@@ -1,3 +1,3 @@
 # FizzBuzzWoof
 
-paired with @egillingham
+paired with [@egillingham](https://github.com/egillingham)
