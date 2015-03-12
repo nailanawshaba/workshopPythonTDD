@@ -1,9 +1,9 @@
 class BowlingGame(object):
     def __init__(self):
-        pass
+        self.pins_toppled = 0
 
-    def roll(self, pings_toppled):
-        pass
+    def roll(self, pins_toppled):
+        self.pins_toppled += pins_toppled
 
     def score(self):
-        return 0
+        return self.pins_toppled
