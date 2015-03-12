@@ -21,9 +21,20 @@ class TestBowlingGame(unittest.TestCase):
         self.roll_times(0, 17)
         self.assertEquals(20, self.game.score())
 
+    def testItHandlesStrikes(self):
+        self.roll_strike()
+        self.game.roll(5)
+        self.game.roll(3)
+
+        self.roll_times(0, 17)
+        self.assertEquals(26, self.game.score())
+
     def roll_spare(self):
         self.game.roll(1)
         self.game.roll(9)
+
+    def roll_strike(self):
+        self.game.roll(10)
 
     def roll_times(self, pins_toppled, times):
         for _ in range(times):
