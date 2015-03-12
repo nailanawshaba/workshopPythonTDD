@@ -10,12 +10,12 @@ class BowlingGame(object):
         roll = 0
         score = 0
         for frame in range(0, 10):
-            frame_score = self.rolls[roll] + self.rolls[roll + 1]
-            if frame_score == 10:  # spare
-                score += 10
-                score += self.rolls[roll + 2]
+            if self.is_spare(roll):
+                score += 10 + self.rolls[roll + 2]
             else:
                 score += self.rolls[roll] + self.rolls[roll + 1]
             roll += 2
-
         return score
+
+    def is_spare(self, roll):
+        return self.rolls[roll] + self.rolls[roll + 1] == 10
