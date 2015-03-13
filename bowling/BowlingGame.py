@@ -4,6 +4,7 @@ class BowlingGame(object):
         self.rolls = []
 
     def roll(self, pins_toppled):
+        self.pins_toppled += pins_toppled
         self.rolls.append(pins_toppled)
 
     def score(self):

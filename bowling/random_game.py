@@ -28,3 +28,4 @@ if __name__ == '__main__':
             print 'Frame #{}: {}'.format(frame + 1, roll2)
             bg.roll(roll2)
     print 'Final Score: {}'.format(bg.score())
+    print 'Pins Toppled: {}'.format(bg.pins_toppled)
